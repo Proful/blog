@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://css.winterveil.net" />
-    
 
     <title>p5js learning</title>
 
@@ -17,53 +16,64 @@
 
     <!-- This site contains some specific styles for the content, which are not part of magick.css -->
     <style>
+      header {
+        margin-bottom: 2em;
+      }
 
+      .float-right {
+        float: right;
+      }
 
-       header {
-         margin-bottom: 2em;
-       }
+      .typography-columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Adjust the space between columns as needed */
+      }
 
-       .typography-columns {
-         display: flex;
-         flex-wrap: wrap;
-         gap: 20px; /* Adjust the space between columns as needed */
-       }
+      .typography-columns > div {
+        flex: 1; /* Allows each child div to grow equally */
+        min-width: 250px; /* Prevents the columns from getting too narrow before stacking */
+      }
 
-       .typography-columns > div {
-         flex: 1; /* Allows each child div to grow equally */
-         min-width: 250px; /* Prevents the columns from getting too narrow before stacking */
-       }
-
-       @media (max-width: 600px) {
-         .typography-columns {
-         flex-direction: column;
-       }
+      @media (max-width: 600px) {
+        .typography-columns {
+        flex-direction: column;
+      }
     </style>
   </head>
   <body>
     <main>
       <header>
         <h1>p5js learning</h1>
-        <p
-          style="
-            text-align: center;
-            margin-top: -2.3rem;
-            margin-bottom: -0.2rem;
-            margin-left: -15rem;
-            font-size: 1.4rem;
-          "
-        >
-          by
-          <a href="https://www.x.com/profulsadangi/" target="_blank">Proful</a>
-        </p>
       </header>
 
       <section id="begining">
-        <h2>Begining</h2>
+        <h2>Introduction</h2>
         <h3>Change height & width of canvas</h3>
         <pre><code>createCanvas(720, 400)</code></pre>
-        <h3>Change background to your favorite color</h3>
-        <pre><code>background(220)</code></pre>
+        <h3>Change background to some random values</h3>
+        <div>
+          <pre><code>background(255,255,255)</code></pre>
+          <img
+            src="https://www.computerhope.com/jargon/r/rgb.png"
+            alt="rgb"
+            width="200"
+            height="200"
+            class="float-right"
+          />
+          <ul>
+            <li>you can enter from 0 to 255</li>
+            <li>R G B</li>
+            <li>Change background to Red</li>
+            <li>Change background to Green</li>
+            <li>Change background to Blue</li>
+            <li>Change background to Yellow</li>
+            <li>Change background to Cyan</li>
+            <li>Change background to Magenta</li>
+            <li>Change background to White then Black</li>
+            <li>Change background to your favorite color</li>
+          </ul>
+        </div>
       </section>
 
       <footer>
